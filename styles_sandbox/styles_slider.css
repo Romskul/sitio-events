@@ -160,3 +160,13 @@ header.header_scrolling nav ul li a::after {
     background: gold;
 }
 /** END OF SCROLLING STYLES OVERRIDES */
+
+
+/* Truco */
+.hidden {
+    display: none;
+}
+.hidden:target {
+    display: block;
+    position: relative;
+}
