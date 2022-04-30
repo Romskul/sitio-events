@@ -127,7 +127,7 @@ nav ul li a::after {
 }
 
 main {
-    max-height: 1400px;
+    height: 1400px;
     max-width: 1400px;
 }
 
