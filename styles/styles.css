@@ -1,0 +1,28 @@
+header {
+  display: block;
+}
+
+header nav {
+  background-color: red;
+}
+
+header nav a {
+  text-decoration: underline;
+}
+
+header.header_scrolling {
+  background-color: blue;
+}
+
+header.header_scrolling > nav {
+  background-color: green;
+}
+
+header.header_scrolling > nav a {
+  text-decoration: line-through;
+}
+
+header.header_scrolling > nav a:hover {
+  text-align: end;
+}
+/*# sourceMappingURL=styles.css.map */

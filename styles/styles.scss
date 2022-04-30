@@ -1,0 +1,22 @@
+header {
+    display: block;
+    nav {
+        background-color: red;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+header.header_scrolling {
+    background-color: blue;
+    & > nav {
+        background-color: green;
+        a {
+            text-decoration: line-through;
+            &:hover{
+                text-align: end;
+            }
+        }
+    }
+}
