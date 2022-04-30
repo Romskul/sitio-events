@@ -168,5 +168,7 @@ header.header_scrolling nav ul li a::after {
 }
 .hidden:target {
     display: block;
+    
     position: relative;
+
 }
