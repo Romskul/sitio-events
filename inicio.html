@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>pruebas-scroll</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles_slider.css">
+	</head>
+	<body>
+		<header>
+            <a href="inicio.html" id="link_logo"><div id="logo">
+                <img src="imagenes/fenix.png" alt="logo_slider" id="fenix">
+                <img src="imagenes/fenix_rojo.png" alt="logo_slider" id="fenix_rojo">
+                <p id="tipo_logo">Reborn Events</p>
+            </div></a>
+            <nav>
+                <ul class="menu" data-animation="bonus">
+                    <li><a class="links" href="">Inicio</a></li>
+                    <li><a class="links" href="">Galeria</a></li>
+                    <li><a class="links" href="">Servicios</a></li>
+                    <li><a class="links" href="">Eventos</a></li>
+                    <li><a class="links" href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            let header = document.querySelector('header');
+
+           window.onscroll = function(event) {
+               if (scrollY >= 100 && !header.classList.contains('header_scrolling')) {
+                   header.classList.add('header_scrolling');
+               }
+               else if (scrollY <= 100 && header.classList.contains('header_scrolling')) {
+                   header.classList.remove('header_scrolling');
+               }
+           }
+       </script>
+        <main>
+            <section>
+                <div id="azul"></div>
+                <div id="amarillo"></div>
+                <div id="morado"></div>
+                <div id="rojo"></div>
+                <div id="magenta"></div>
+            </section>
+        </main>
+	</body>
+</html>
